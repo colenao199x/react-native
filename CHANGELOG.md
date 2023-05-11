@@ -1,6 +1,6 @@
 # Changelog
 
-## v0.72.0-rc.2
+## v0.72.0-rc.3
 
 ### Breaking
 
@@ -109,8 +109,7 @@
 - LogBox now makes URL links tappable. ([d9ade19b71](https://github.com/facebook/react-native/commit/d9ade19b711fae03838581ff2564185d5b7a24cb) by [@sammy-SC](https://github.com/sammy-SC))
 - Upgrade to deprecated-react-native-prop-types@4.1.0 ([f84256a924](https://github.com/facebook/react-native/commit/f84256a924ef8aee8ac5773dbf569ee627472101) by [@yungsters](https://github.com/yungsters))
 - Flipper to 0.182.0 ([8fae37eaea](https://github.com/facebook/react-native/commit/8fae37eaeab0c75c0be2885ce9198131e4d74c92) by [@cortinico](https://github.com/cortinico))
-- Bump CLI to 11.2.1 ([d9d7286e8a](https://github.com/facebook/react-native/commit/d9d7286e8ae7f701b0405cbc0191d22abcbd53da) by [@kelset](https://github.com/kelset))
-- Bump Metro to 0.76.2, cherry pick Metro config updates ([c068efcdae](https://github.com/facebook/react-native/commit/c068efcdaea4c075151bab77dcbbf06e6e641080) by [@huntie](https://github.com/huntie))
+- Bump metro to 0.76.4 and CLI to 11.2.3 ([9cf1918d0d](https://github.com/facebook/react-native/commit/9cf1918d0d3cfd6d744b8c79afe572cfbdae9257)) by [@kelset](https://github.com/kelset))
 - Bump tsconfig/react-native to 3.0.0 ([5c4649af27](https://github.com/facebook/react-native/commit/5c4649af279d40c83b181f2a35b7cf58a50eac2a) by [@NickGerleman](https://github.com/NickGerleman))
 - Brew overwrites system Python 3. ([ed8a3e08e2](https://github.com/facebook/react-native/commit/ed8a3e08e2f227a37730b697b0e4e2c7d63e27ff) by [@blakef](https://github.com/blakef))
 
@@ -254,6 +253,7 @@
 
 #### Android specific
 
+- Read GROUP name in gradle-plugin dependency code ([615d9aefc4](https://github.com/facebook/react-native/commit/615d9aefc4274ed7a193c0410ed7f86e90ad1bff) by [@douglowder](https://github.com/douglowder))
 - Fix letters duplication when using autoCapitalize https://github.com/facebook/react-native/issues/29070" ([cbe934bcff](https://github.com/facebook/react-native/commit/cbe934bcff0bdbd26f669fd9ace4fc818ca39e98) by [@fabriziobertoglio1987](https://github.com/fabriziobertoglio1987))
 - Reset accessibility value when it gets a null value ([aacf28778e](https://github.com/facebook/react-native/commit/aacf28778eadfcae2ca33f66697620f7222d804c))
 - Fix check of "reduce motion" setting on android ([790df10fa9](https://github.com/facebook/react-native/commit/790df10fa9bac18a60bd52178cc222f5e368a44b) by [@baranga](https://github.com/baranga))
@@ -287,6 +287,7 @@
 
 #### iOS specific
 
+- Fix Flipper by moving podfile modification of preprocessor def `FB_SONARKIT_ENABLED` from React-Core to React-RCTAppDelegate where it is now used. ([34d5212f5c](https://github.com/facebook/react-native/commit/34d5212f5ca468ec28a2a82097c0f7cf8722739d))
 - Invalid prop values no longer trigger redbox in the legacy renderer ([cb28a2c46e](https://github.com/facebook/react-native/commit/cb28a2c46e1c65fbe71a69ee0b0e0bb4b2e20a35) by [@motiz88](https://github.com/motiz88))
 - Fix issue where keyboard does not open when `TextInput` `showSoftInputOnFocus` changes from `false` to `true` ([7425c24cbe](https://github.com/facebook/react-native/commit/7425c24cbe66ec743794b6ffc4cc1a653e821dde) by [@christianwen](https://github.com/christianwen))
 - Fix ScrollView `automaticallyAdjustKeyboardInsets` not resetting when Prefer Cross-Fade Transitions is enabled and keyboard hides ([b8f1bb50f7](https://github.com/facebook/react-native/commit/b8f1bb50f7734cbccb19808aae6f86a92fa8eea5) by [@grgmo](https://github.com/grgmo))
